@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSS LMS</title>
+    <link rel="stylesheet" href="styles-announcements.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/a.png">
+</head>
+<header class="title">
+    <H1>Announcements</H1>
+</header>
+<body style="background-color: #1d2b3a;">
+    <section class="header">
+        <nav>
+            <!-- Logo 🔽 -->
+        <div class="text-box">
+            <a href="index.html"><img src="images/logo-removebg-preview.png" width="-200px" height="190px"></a>
+            <h1>Post your announcements here</h1>
+        </div>
+            <form action="post_handler.php" method="post" class="postform">
+                <label for="post_title">Title:</label><br>
+                <input type="text" id="post_title" name="post_title" required><br>
+                <label for="post_content">Content:</label><br>
+                <textarea id="post_content" name="post_content" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Submit Post">
+            </form>
+        </div>
+    </section >
+
+<!-- ---------javaScript for toggle menu -->
+<script>
+
+var navLinks =document.getElementById("navLinks")
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
